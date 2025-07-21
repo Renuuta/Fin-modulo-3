@@ -1,0 +1,31 @@
+.section-key {
+  &__header {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    color: $primary-color;
+    font-family: $font-main;
+    margin-bottom: 0.5rem;
+  }
+  &__subtitle {
+    color: $secondary-color;
+    font-size: 1.2rem;
+  }
+  &__card {
+    border-radius: $card-radius;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    &--featured {
+      border: 2px solid $primary-color;
+    }
+  }
+  &__btn {
+    background-color: $primary-color;
+    border: none;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
